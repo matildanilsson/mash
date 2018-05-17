@@ -1,11 +1,11 @@
 import React from 'react';
 import {withHistory, Link} from 'react-router-dom'
 
-export class Login extends Component{
+export class Comments extends Component{
     reneder(){
         return(
             <div>
-                <h1>This is Login</h1>
+                <h1>This is Comments</h1>
             </div>
         );  
     } 
