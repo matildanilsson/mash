@@ -3,5 +3,5 @@ import {withHistory, Link} from 'react-router-dom';
 
 export const Course = () => 
     <div>
-        <h1>course</h1>
+        <Link to="/"><h1>Back</h1></Link>
     </div>
