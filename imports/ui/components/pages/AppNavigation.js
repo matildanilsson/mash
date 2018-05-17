@@ -3,5 +3,6 @@ import {withHistory, Link} from 'react-router-dom';
 
 export const AppNavigation = () => 
     <div>
-        <h1>App Navigation</h1>
+        <Link to="/Course"> <div className="courseBlock"> </div></Link>
+        <Link to="/AddCourse"> <h1> Lägg till kurs </h1></Link>
     </div>
