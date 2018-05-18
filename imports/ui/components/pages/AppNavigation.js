@@ -1,5 +1,6 @@
 import React from 'react';
 import {withHistory, Link} from 'react-router-dom';
+import AccountsUIWrapper from '../../layouts/AccountsUIWrapper.js';
 
 export const AppNavigation = () => 
     <div>

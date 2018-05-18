@@ -3,7 +3,7 @@ import {withHistory, Link} from 'react-router-dom';
 import {Comment} from '../Comment';
 
 export const Course = () => 
-    <div>
+    <div> 
         <Link to="/"><h1>Back</h1></Link>
         <Comment />
     </div>

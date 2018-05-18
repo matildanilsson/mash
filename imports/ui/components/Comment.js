@@ -18,7 +18,7 @@ export class Comment extends Component{
     
     render(){
         return(
-            <div>
+            <div>            
                 <h1>This is Comments</h1>
 
             </div>
