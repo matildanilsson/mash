@@ -4,7 +4,7 @@ import {withHistory, Link} from 'react-router-dom'
 export class Comments extends Component{
     reneder(){
         return(
-            <div>
+            <div>            
                 <h1>This is Comments</h1>
             </div>
         );  
