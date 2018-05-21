@@ -5,3 +5,10 @@
     height: 400px;
     background-color: blue;
 }
+
+#navbar{
+    height: 50px;
+    width: 1000 px;
+    background-color: pink;
+    margin: 0;
+}
