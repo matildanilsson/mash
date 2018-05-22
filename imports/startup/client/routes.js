@@ -9,6 +9,7 @@ import {AddCourse} from '../../ui/components/pages/AddCourse.js';
 import {SignUp} from '../../ui/components/SignUp.js';
 import {Login} from '../../ui/components/Login.js';
 
+
 //<Route component={NotFoundPage}/>
 
 export const renderRoutes = () => (
