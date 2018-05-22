@@ -1,18 +1,16 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import {withTracker } from 'meteor/react-meteor-data';
 import {withHistory, Link} from 'react-router-dom';
 import { Comments } from '../../../api/comments.js';
 
-import Comment from '../Comment.js';
+import {Comment} from '../Comment.js';
 
-
-/**export const Course = () => 
-    <div>  
-        <Comment />
-    </div>
-*/
-class Course extends Component {
+export class Course extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+        };
+    }
     handleSubmit(event) {
         event.preventDefault();
      
@@ -30,33 +28,31 @@ class Course extends Component {
 
     renderComments() {
         return this.props.comments.map((comment) => (
-        <Comment key={comment._id} comment={comment} />
+            <Comment key={comment._id} comment={comment} />
         ));
     }
 
-    getComment() {
-        return [
-        { _id: 1, text: 'This is comment 1' },
-        { _id: 2, text: 'This is comment 2' },
-        { _id: 3, text: 'This is comment 3' },
-        ];
-    }
  
   render() {
       return (
        <div className="container">
           <header>
-              <Link to="/"><h1>Back</h1></Link>
-              <h1>Todo List</h1>
+              <Link to="/SignUp"><h1>TotallyBack</h1></Link>
+              <h1>Course</h1>
+          </header>
+          <div>
+              This is course info
+          </div>
+          <div>
+              This is comments
               <form className="new-task" onSubmit={this.handleSubmit.bind(this)} >
             <input
               type="text"
               ref="textInput"
-              placeholder="Type to add new tasks"
+              placeholder="Type to add new comment"
             />
           </form>
-          </header>
-   
+          </div>
           <ul>
             {this.renderComments()}
           </ul>
@@ -64,9 +60,3 @@ class Course extends Component {
       );
   }
 }
-
-export default withTracker(() => {
-    return {
-        comments: Comments.find({}, { sort: { createdAt: -1 } }).fetch(),
-    };
-  })(Course);
