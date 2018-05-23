@@ -15,6 +15,7 @@ export class AddCourse extends Component{
             coursePeriod: '',
             courseLevel: '',
             courseInfo: '',
+            courseInstitute: '',
         });
 
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -34,6 +35,7 @@ export class AddCourse extends Component{
             coursePeriod: this.state.coursePeriod,
             courseLevel: this.state.courseLevel,
             courseInfo: this.state.courseInfo,
+            courseInstitute: this.state.courseInstitute,
             createdAt: new Date(),
         });
     }
@@ -48,42 +50,49 @@ export class AddCourse extends Component{
 		        	<input
 		        		type="text"
 		        		name="courseName"
-                        placeholder="Add course name"
+                        placeholder="Kursnamn"
                         onChange={this.onChange}
 		        	/>
                     <br></br>
 		        	<input
 		        		type="text"
 		        		name="coursePace"
-                        placeholder="Add course pace" 
+                        placeholder="Studietakt" 
                         onChange={this.onChange}
 		        	/>
                     <br></br>
 		        	<input
 		        		type="text"
 		        		name="coursePoints"
-                        placeholder="Add course points"
+                        placeholder="Högskolepoäng"
                         onChange={this.onChange} 
 		        	/>
                     <br></br>
 		        	<input
 		        		type="text"
 		        		name="coursePeriod"
-                        placeholder="Add course period" 
+                        placeholder="Kursperiod" 
                         onChange={this.onChange}
 		        	/>
                     <br></br>
                     <input
 		        		type="text"
 		        		name="courseLevel"
-                        placeholder="Add course level" 
+                        placeholder="Nivå" 
                         onChange={this.onChange}
 		        	/>
                     <br></br>
                     <input
 		        		type="text"
 		        		name="courseInfo"
-                        placeholder="Add course Info" 
+                        placeholder="Kursinformation" 
+                        onChange={this.onChange}
+		        	/>
+                    <br></br>
+                    <input
+		        		type="text"
+		        		name="courseInstitute"
+                        placeholder="Institution" 
                         onChange={this.onChange}
 		        	/>
                     <br></br>
