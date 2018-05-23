@@ -1,11 +1,19 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {withHistory, Link} from 'react-router-dom';
 
-export class CourseBlock extends Component{
-    reneder(){
+export default class CourseBlock extends Component{
+
+    componentWillMount(){
+        console.log(this.props.course.courseName);
+    }
+
+    render(){       
         return(
-            <div>
-                <h1>This is CourseBlock</h1>
+            <div className="courseBlock">
+                <p>{this.props.course.courseName}</p>
+                <p>{this.props.course.coursePace}</p>
+                <p>{this.props.course.coursePoints}</p>
+                <p>{this.props.course.coursePeriod}</p>
             </div>
         );  
     } 
