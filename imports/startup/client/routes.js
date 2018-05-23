@@ -22,7 +22,7 @@ const RenderRoutes = appProps => {
       < AccountsUIWrapper />
       </header>
       <Switch>
-        <Route path="/" component={() => <AppNavigation courses={appProps.courses}/>}/> 
+        <Route exact path="/" component={() => <AppNavigation courses={appProps.courses}/>}/> 
         <Route path="/Course" component={Course}/>
         <Route path="/AddCourse" component={AddCourse}/>
         <Route path="/SignUp" component={SignUp}/>
