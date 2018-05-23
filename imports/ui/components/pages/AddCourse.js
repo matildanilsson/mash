@@ -42,9 +42,9 @@ export class AddCourse extends Component{
 
     render(){
         return(
-		    <div>
-		        <Link to="/"><h1>Back</h1></Link>
-		        <h1>Add Course</h1>
+		    <div className="container">
+		    
+		        <h1>Lägg till en kurs</h1>
 
 		        <form className="add-course" onSubmit={this.handleSubmit}>
 		        	<input
@@ -98,8 +98,8 @@ export class AddCourse extends Component{
                     <br></br>
                     <button>Skicka</button>
 		        </form>
+                <Link to="/"><h1>Tillbaka</h1></Link>
 		    </div>
     	);
-
     }
 }
