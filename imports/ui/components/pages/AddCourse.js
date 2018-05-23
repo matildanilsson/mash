@@ -13,6 +13,8 @@ export class AddCourse extends Component{
             coursePace: '',
             coursePoints: '',
             coursePeriod: '',
+            courseLevel: '',
+            courseInfo: '',
         });
 
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -30,18 +32,10 @@ export class AddCourse extends Component{
             coursePace: this.state.coursePace,
             coursePoints: this.state.coursePoints,
             coursePeriod: this.state.coursePeriod,
+            courseLevel: this.state.courseLevel,
+            courseInfo: this.state.courseInfo,
             createdAt: new Date(),
         });
-        // Find the text field via the React ref
-        /*const text = ReactDOM.findDOMNode(this.refs.textInput).value.trim();
-        console.log('text');*/
-        /*CourseCollection.insert({
-            text,
-            createdAt: new Date(), // current time
-        });*/
-        
-            // Clear form
-        /*ReactDOM.findDOMNode(this.refs.textInput).value = '';*/
     }
 
     render(){
@@ -76,6 +70,20 @@ export class AddCourse extends Component{
 		        		type="text"
 		        		name="coursePeriod"
                         placeholder="Add course period" 
+                        onChange={this.onChange}
+		        	/>
+                    <br></br>
+                    <input
+		        		type="text"
+		        		name="courseLevel"
+                        placeholder="Add course level" 
+                        onChange={this.onChange}
+		        	/>
+                    <br></br>
+                    <input
+		        		type="text"
+		        		name="courseInfo"
+                        placeholder="Add course Info" 
                         onChange={this.onChange}
 		        	/>
                     <br></br>

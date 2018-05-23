@@ -3,10 +3,6 @@ import {withHistory, Link} from 'react-router-dom';
 
 export default class CourseBlock extends Component{
 
-    componentWillMount(){
-        console.log(this.props.course.courseName);
-    }
-
     render(){       
         return(
             <div className="courseBlock">
@@ -14,6 +10,7 @@ export default class CourseBlock extends Component{
                 <p>{this.props.course.coursePace}</p>
                 <p>{this.props.course.coursePoints}</p>
                 <p>{this.props.course.coursePeriod}</p>
+                <p>{this.props.course.courseLevel}</p>
             </div>
         );  
     } 
