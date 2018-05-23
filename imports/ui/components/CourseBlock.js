@@ -40,13 +40,19 @@ export default class CourseBlock extends Component{
             <div>
                 <Link to={"/" + this.props.course._id}>
                     <div style={ containerStyle } className="courseBlock">
-                        <p>{this.props.course.courseName}</p>
-                        <p>{this.props.course.coursePace}</p>
-                        <p>{this.props.course.coursePoints}</p>
-                        <p>{this.props.course.coursePeriod}</p>
-                        <p>{this.props.course.courseLevel}</p>
+                        <div id="container-h1">
+                            <h1 id="courseTitle">{this.props.course.courseName}</h1>
+                        </div>
+                        <hr noshade></hr>
+                        <div id="flex-box-p">
+                            <p id="course-p">{this.props.course.coursePace}</p>
+                            <p id="course-p">{this.props.course.coursePoints}</p>
+                            <p id="course-p">{this.props.course.coursePeriod}</p>
+                            <p id="course-p">{this.props.course.courseLevel}</p>
+                        </div>
                     </div>
                 </Link> 
+
             </div>
 
         );  

@@ -34,7 +34,7 @@ export class AppNavigation extends Component {
 
           {this.renderCourses()}
         </div>
-        <Link to="/AddCourse"><h1>Lägg till kurs</h1></Link> 
+        <Link to="/AddCourse"><div id="add-button"><h1 id="add-button-h1">Lägg till kurs</h1></div></Link> 
       </div>
     );
   }
