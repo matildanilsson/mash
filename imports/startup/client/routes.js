@@ -28,7 +28,7 @@ const RenderRoutes = appProps => {
         <Route path="/AddCourse" component={AddCourse}/>
         <Route path="/SignUp" component={SignUp}/>
         <Route path="/Login" component={Login}/>
-
+        
       </Switch>
     </div>
   </BrowserRouter>
