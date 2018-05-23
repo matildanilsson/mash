@@ -37,13 +37,19 @@ export default class CourseBlock extends Component{
           const { containerStyle } = styles;
         console.log(this.state.backgroundColor);   
         return(
-            <div style={ containerStyle } className="courseBlock">
-                <p>{this.props.course.courseName}</p>
-                <p>{this.props.course.coursePace}</p>
-                <p>{this.props.course.coursePoints}</p>
-                <p>{this.props.course.coursePeriod}</p>
-                <p>{this.props.course.courseLevel}</p>
+            <div>
+                <Link to={"/" + this.props.course._id}>
+                    <div style={ containerStyle } className="courseBlock">
+                        <p>{this.props.course.courseName}</p>
+                        <p>{this.props.course.coursePace}</p>
+                        <p>{this.props.course.coursePoints}</p>
+                        <p>{this.props.course.coursePeriod}</p>
+                        <p>{this.props.course.courseLevel}</p>
+                    </div>
+                </Link> 
             </div>
+
         );  
     } 
 }
+//<Link to={"/" + this.props.course.courseName.replace(/\s+/g, '').toLowerCase()}>

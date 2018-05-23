@@ -24,11 +24,8 @@ const RenderRoutes = appProps => {
       </header>
       <Switch>
         <Route exact path="/" render={() => <AppNavigation courses={appProps.courses}/>}/> 
-        <Route path="/Course" render={() => <Course comments={appProps.comments}/>}/> 
-        <Route path="/AddCourse" component={AddCourse}/>
-        <Route path="/SignUp" component={SignUp}/>
-        <Route path="/Login" component={Login}/>
-        
+        <Route name="course" path='/:id' render={(props) => <Course comments={appProps.comments} id={props.match.params.id}/>}/> 
+        <Route path="/AddCourse" component={AddCourse}/>       
       </Switch>
     </div>
   </BrowserRouter>
