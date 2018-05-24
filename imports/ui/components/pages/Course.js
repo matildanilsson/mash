@@ -63,29 +63,34 @@ export class Course extends Component {
 
   render() {
         return (
-            <div className="container">
-                <header>                  
-                    <h1>Course</h1>
-                </header>
-                <div>
-                    {this.props.id}
-                    <ul>
-                        {this.renderComments()}
-                    </ul>
+            <div className = "container"> 
+                <div className="containerComment">
+                    <header>                  
+                        <h1 id="course-title-comment">Course</h1>
+                    </header>
+                    <div>
+                        {this.props.id}
+                        <ul>
+                            {this.renderComments()}
+                        </ul>
+                    </div>
+                    <div>
+                        <form className="add-comment" onSubmit={this.handleSubmit.bind(this)}>
+                            <input 
+                                id = "form-comment"
+                                type="text"
+                                name="comment"
+                                placeholder="Lägg till kommentar..."
+                                onChange={this.onChange}
+                            />
+                            
+                        </form>
+                    </div>
+
                 </div>
-                <div>
-                    <form className="add-comment" onSubmit={this.handleSubmit.bind(this)}>
-                        <input
-                            type="text"
-                            name="comment"
-                            placeholder="Lägg till kommentar..."
-                            onChange={this.onChange}
-                        />
-                        <button>Skicka</button>
-                    </form>
-                    <Link to="/"><h1>Tillbaka</h1></Link>
-                </div>
-            </div>
+                
+                <Link to="/" id = "add-button-comment" ><h1>Tillbaka</h1></Link>
+             </div>
         );
     }
 }
