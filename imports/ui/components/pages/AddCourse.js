@@ -44,7 +44,7 @@ export class AddCourse extends Component{
         return(
 		    <div className="container">
 		    
-		        <h1>Lägg till en kurs</h1>
+		        <h1 id="add-button">Lägg till en kurs</h1>
 
 		        <form className="add-course" onSubmit={this.handleSubmit}>
 		        	<input
@@ -96,9 +96,9 @@ export class AddCourse extends Component{
                         onChange={this.onChange}
 		        	/>
                     <br></br>
-                    <button>Skicka</button>
+                    <button id="add-button">Skicka</button>
 		        </form>
-                <Link to="/"><h1>Tillbaka</h1></Link>
+                <Link to="/"><h1 id="add-button">Tillbaka</h1></Link>
 		    </div>
     	);
     }
