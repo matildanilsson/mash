@@ -22,6 +22,9 @@ const RenderRoutes = appProps => {
       <header id="navbar">
       < AccountsUIWrapper />
       </header>
+      <header id="mashHeader">
+        <h1 id="mashTitle">MASH</h1>
+      </header>
       <Switch>
         <Route exact path="/" render={() => <AppNavigation courses={appProps.courses}/>}/> 
         <Route path="/Course" render={() => <Course comments={appProps.comments}/>}/> 
