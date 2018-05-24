@@ -48,6 +48,16 @@ body {
   background: #E7D7C7;
 }
 
+.containerComment{
+
+  width: 60%;
+  height: 100%;
+  margin: 25px auto;
+  position: relative;
+  background: #d2324b;
+  border-radius: 20px;
+}
+
 .appNavContainer {
     display: flex;
     flex-wrap: wrap;
@@ -93,6 +103,24 @@ body {
   text-decoration: none;
 }
 
+#form-comment{
+  border-radius: 15px;
+  margin: 0;
+  width: 94.5%;
+}
+
+#add-button-comment{
+  background-color: white;
+  border-radius: 10px;
+  width: 110px;
+  text-align: center;
+  margin: 15px 10px 20px 5px;
+  padding: 5px 3px 5px 3px;
+  font-color: black;
+  letter-spacing: 0.5px;
+}
+
+
 #add-button{
   background-color: white;
   border-radius: 10px;
@@ -131,7 +159,14 @@ h1 {
   font-family: 'Roboto';
   letter-spacing: 0.5px;
 }
- 
+
+#course-title-comment{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: white;
+}
+
 form {
   position: relative;
 }
@@ -151,6 +186,10 @@ li {
  
 header .hide-completed {
   float: right;
+}
+
+header{
+  text-align: center;
 }
 
 input{
