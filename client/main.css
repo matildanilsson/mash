@@ -88,8 +88,9 @@ body {
 #course-p{
   font-family: 'Roboto';
   font-size: 11px;
-  color: black;
+  color: white;
   letter-spacing: 1px;
+  text-decoration: none;
 }
 
 #add-button{
@@ -101,6 +102,12 @@ body {
   padding: 5px 3px 5px 3px;
   font-color: black;
   letter-spacing: 0.5px;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 hr{
