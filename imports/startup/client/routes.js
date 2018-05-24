@@ -24,8 +24,9 @@ const RenderRoutes = appProps => {
       </header>
       <Switch>
         <Route exact path="/" render={() => <AppNavigation courses={appProps.courses}/>}/> 
-        <Route name="course" path='/:id' render={(props) => <Course comments={appProps.comments} id={props.match.params.id}/>}/> 
-        <Route path="/AddCourse" component={AddCourse}/>       
+        <Route path="/Course" render={() => <Course comments={appProps.comments}/>}/> 
+        <Route path="/AddCourse" component={AddCourse}/>
+      
       </Switch>
     </div>
   </BrowserRouter>
@@ -36,3 +37,4 @@ export default withTracker(() => {
     comments: Comments.find({}, { sort: { createdAt: -1 } }).fetch(),
   };
 })(RenderRoutes);
+//      <Route name="Course" path='/:id' render={(props) => <Course comments={appProps.comments} id={props.match.params.id}/>}/> 

@@ -7,9 +7,9 @@ import { CourseCollection } from '../../../api/courses.js';
 import {Comment} from '../Comment.js';
 
 export class Course extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
+    
+    componentWillMount() {
+        this.setState({
             courseName: '',
             coursePace: '',
             coursePoints: '',
@@ -19,7 +19,7 @@ export class Course extends Component {
             courseInstitute: '',
 
             comment: '',
-        };
+        });
         this.handleSubmit = this.handleSubmit.bind(this);
         this.onChange = this.onChange.bind(this);
         //this.getDataFromDatabase = this.getDataFromDatabase(this);
@@ -38,26 +38,12 @@ export class Course extends Component {
         });
     }
 
-    //handleSubmit(event) {
-    //    event.preventDefault();
-     
-        // Find the text field via the React ref
-    //    const text = ReactDOM.findDOMNode(this.refs.textInput).value.trim();
-     
-    //    Tasks.insert({
-    //      text,
-    //      createdAt: new Date(), // current time
-    //    });
-     
-        // Clear form
-    //    ReactDOM.findDOMNode(this.refs.textInput).value = '';
-    //  }
-    //  
-    //renderComments() {
-    //    return this.props.comments.map((comment) => (
-    //        <Comment key={comment._id} comment={comment} />
-    //    ));
-    //}
+    renderComments = () => {
+    console.log(this.props.comments)
+     return this.props.comments.map((comment) => (
+         <Comment key={comment._id} comment={comment} />
+        ));
+      }
 
     //getDataFromDatabase(){
     //    const course = Mongo.courses.findOne(this.props._id).then(res => {
@@ -75,34 +61,31 @@ export class Course extends Component {
     //    });
     //}
 
- 
   render() {
         return (
             <div className="container">
-                <header>
-                    <Link to="/"><h1>Tillbaka</h1></Link>
+                <header>                  
                     <h1>Course</h1>
                 </header>
                 <div>
                     {this.props.id}
+                    <ul>
+                        {this.renderComments()}
+                    </ul>
                 </div>
                 <div>
                     <form className="add-comment" onSubmit={this.handleSubmit.bind(this)}>
                         <input
                             type="text"
                             name="comment"
-                            placeholder="Lägg till kommentar"
+                            placeholder="Lägg till kommentar..."
                             onChange={this.onChange}
                         />
-                        <br></br>
                         <button>Skicka</button>
                     </form>
+                    <Link to="/"><h1>Tillbaka</h1></Link>
                 </div>
-
             </div>
         );
     }
 }
-//                <ul>
-//                    {this.renderComments()}
-//                </ul>

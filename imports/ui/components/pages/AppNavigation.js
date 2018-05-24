@@ -19,7 +19,7 @@ export class AppNavigation extends Component {
       return (
        
           <CourseBlock key={course._id} course={course} />
-  
+
       )
     })
 
@@ -30,11 +30,9 @@ export class AppNavigation extends Component {
     return (
       <div className="container">                  
         <div className="appNavContainer">
-          
-
           {this.renderCourses()}
         </div>
-        <Link to="/AddCourse"><div id="add-button"><h1 id="add-button-h1">Lägg till kurs</h1></div></Link> 
+        <Link to="/AddCourse"><h1>Lägg till kurs</h1></Link> 
       </div>
     );
   }

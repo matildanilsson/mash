@@ -75,7 +75,7 @@ body {
 #course-p{
   font-family: 'Roboto';
   font-size: 11px;
-  color: white;
+  color: black;
   letter-spacing: 1px;
 }
 
@@ -145,6 +145,14 @@ button{
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+ul{
+    background: none;
+}
+
+li{
+    border-bottom: none;
 }
 
 @media (max-width: 600px) {
