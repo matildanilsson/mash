@@ -67,10 +67,17 @@ export class Course extends Component {
                 <div className="containerComment">
                     <header>                  
                         <h1 id="course-title-comment">Course</h1>
+                        <div id = "flex-box-comment"> 
+                        <p id = "course-p"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis viverra diam non justo. 
+                            Aliquam erat volutpat. Curabitur sagittis hendrerit ante. Mauris suscipit, 
+                            ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. 
+                            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p>
+                            </div>
                     </header>
+                    <h1 id="course-title-comment"> Recensioner </h1>
                     <div>
                         {this.props.id}
-                        <ul>
+                        <ul id="course-p">
                             {this.renderComments()}
                         </ul>
                     </div>

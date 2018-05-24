@@ -183,6 +183,15 @@ h1 {
   font-size: 20px;
   letter-spacing: 1px;
   color: white;
+  width: 100%;
+  text-align: center;
+}
+#flex-box-comment{
+
+  display: flex;
+  height: 70%;
+  padding: 0px 15px 0px 15px;
+  text-align: center;
 }
 
 form {
@@ -204,10 +213,6 @@ li {
  
 header .hide-completed {
   float: right;
-}
-
-header{
-  text-align: center;
 }
 
 input{
