@@ -41,6 +41,17 @@
   margin: auto;
 }
 
+#addCourseTitle{
+  width: 100%;
+  text-align: center;
+}
+
+#addCourseTitleh1{
+  font-size: 30px;
+  color: white;
+  font-family: 'Roboto';
+}
+
 body {
   font-family: sans-serif;
   background-color: #E7D7C7;
@@ -221,6 +232,7 @@ input{
     margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
 }
 
 form{
