@@ -43,10 +43,10 @@ export class AddCourse extends Component{
     render(){
         return(
 		    <div className="container">
+             <div className="container-add-course">
                 <header id="addCourseTitle">
                     <h1 id="addCourseTitleh1">Lägg till en kurs</h1>
                 </header>
-
 		        <form className="add-course" onSubmit={this.handleSubmit}>
 		        	<input
 		        		type="text"
@@ -93,12 +93,13 @@ export class AddCourse extends Component{
                     <input
 		        		type="text"
 		        		name="courseInstitute"
-                        placeholder="Institution(tfe, mms, uid, cs)" 
+                        placeholder="Institution (tfe, mms, uid, cs)" 
                         onChange={this.onChange}
 		        	/>
                     <br></br>
                     <button id="add-button">Skicka</button>
 		        </form>
+                </div>
                 <Link to="/"><h1 id="add-button">Tillbaka</h1></Link>
 		    </div>
     	);
