@@ -7,13 +7,49 @@
     margin: 5px;
 }
 
+#login-buttons a, .accounts-dialog a {
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 0.7px;
+    font-family: 'Roboto';
+}
+
 #navbar{
-    height: 40px;
+    height: 10px;
+    width: 1000 px;
+    background-color: #DEC7B0;
+    margin: auto;
+    padding: 10px 15px 15px 30px;
+    position: relative;
+}
+
+#mashHeader{
+    height: 110px;
     width: 1000 px;
     background-color: #DEC7B0;
     margin: 0;
-    padding: 20px 15px 15px 15px;
     position: relative;
+}
+
+#mashTitle{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 70px;
+  color: white;
+  margin: auto;
+}
+
+#addCourseTitle{
+  width: 100%;
+  text-align: center;
+}
+
+#addCourseTitleh1{
+  font-size: 30px;
+  color: white;
+  font-family: 'Roboto';
 }
 
 body {
@@ -41,6 +77,16 @@ body {
   background: #E7D7C7;
 }
 
+.containerComment{
+
+  width: 85%;
+  height: 100%;
+  margin: 10px auto;
+  position: relative;
+  background: #d2324b;
+  border-radius: 20px;
+}
+
 .appNavContainer {
     display: flex;
     flex-wrap: wrap;
@@ -58,43 +104,86 @@ body {
 #flex-box-p{
   display: flex;
   height: 70%;
-  padding-left: 20px;
+  padding: 1px 0px 0px 20px;
   flex-direction: column;
 }
  
 #login-buttons {
+  font-family: Roboto;
   display: block;
+  text-decoration: none;
+  margin:auto;
+  padding: 0px 0px 0px 0px;
+
 }
 
 #courseTitle{
   font-family: 'Roboto', sans-serif;
   font-size: 13px;
   letter-spacing: 1px;
+  color: white;
 } 
 
 #course-p{
   font-family: 'Roboto';
+<<<<<<< HEAD
   font-size: 11px;
+=======
+  font-size: 15px;
+>>>>>>> 853921977e2f0bcf9a743dab609cb0ed43c89575
   color: white;
   letter-spacing: 1px;
+  text-decoration: none;
 }
+
+#form-comment{
+  border-radius: 15px;
+  margin: 0;
+  width: 95.5%;
+  border: none;
+}
+
+#add-button-comment{
+  background-color: white;
+  border-radius: 10px;
+  width: 110px;
+  text-align: center;
+  margin: 15px 10px 20px 5px;
+  padding: 10px 10px 10px 10px;
+  color: black;
+  letter-spacing: 0.5px;
+  margin-left: 40%
+}
+
 
 #add-button{
   background-color: white;
   border-radius: 10px;
-  padding: auto;
-  width: 15%;
+  width: 110px;
   text-align: center;
+  margin: 15px 10px 20px 5px;
+  padding: 5px 3px 5px 3px;
+  font-color: black;
+  letter-spacing: 0.5px;
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 hr{
   border-style: solid;
   border-width: 0.5px;
   color: white;
+  margin:0px;
+  opacity: 0.3;
 }
 
 #add-button-h1{
-  color: #E7D7C7;
+  font-color: black;
+  letter-spacing: 0.5px;
 }
 
 h1 {
@@ -102,10 +191,27 @@ h1 {
   margin: center;
   margin-bottom: 10px;
   display: inline-block;
-  color: white;
+  color: black;
   font-family: 'Roboto';
+  letter-spacing: 0.5px;
 }
- 
+
+#course-title-comment{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+#flex-box-comment{
+
+  display: flex;
+  height: 70%;
+  padding: 0px 15px 0px 15px;
+  text-align: center;
+}
+
 form {
   position: relative;
 }
@@ -128,11 +234,11 @@ header .hide-completed {
 }
 
 input{
-    width: 30%;
+    width: 50%;
     padding: 12px 12px;
     margin: 8px 0;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 form{
@@ -155,7 +261,18 @@ li{
     border-bottom: none;
 }
 
-@media (max-width: 600px) {
+.container-add-course{
+
+  width: 85%;
+  height: 100%;
+  margin: 10px auto;
+  position: relative;
+  background: #f3e7dbba;
+  border-radius: 20px;
+}
+
+@media only screen 
+and (max-width : 700px) and (min-width: 300px) {
 
     .container {
         width: 100%;
@@ -173,5 +290,26 @@ li{
  
     .new-task input {
         padding-bottom: 5px;
+    }
+    #form-comment{
+      width: 94%;
+    }
+    .containerComment{
+      width: 98%;
+      margin: 5px, auto; 
+    }
+    input{
+      width: 80%;
+    }
+    .container-add-course{
+      width: 98%;
+      margin: 5px, auto; 
+    }
+    .courseBlock{
+      width: 175px;
+      height: 250px;
+    }
+    #course-p {
+      margin-bottom: 0%;
     }
 }

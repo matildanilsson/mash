@@ -37,6 +37,7 @@ export default class CourseBlock extends Component{
           const { containerStyle } = styles;
  
         return(
+
             <div>
                 <Link to={"/" + this.props.course._id}>
                     <div style={ containerStyle } className="courseBlock">
@@ -45,14 +46,13 @@ export default class CourseBlock extends Component{
                         </div>
                         <hr></hr>
                         <div id="flex-box-p">
-                            <p id="course-p">{this.props.course.coursePace}</p>
-                            <p id="course-p">{this.props.course.coursePoints}</p>
-                            <p id="course-p">{this.props.course.coursePeriod}</p>
-                            <p id="course-p">{this.props.course.courseLevel}</p>
+                            <p id="course-p">Studietakt: {this.props.course.coursePace}</p>
+                            <p id="course-p">Läsperiod: {this.props.course.coursePoints}</p>
+                            <p id="course-p">Högskolepoäng: {this.props.course.coursePeriod}</p>
+                            <p id="course-p">Nivå: {this.props.course.courseLevel}</p>
                         </div>
                     </div>
-                </Link> 
-
+                </Link>  
             </div>
 
         );  

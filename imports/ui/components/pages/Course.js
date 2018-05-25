@@ -42,31 +42,34 @@ export class Course extends Component {
         console.log(this.props)
         return (
             <div className="container">
-                <header>
-                    <h1>{this.props.course.courseName}</h1>
-                </header>
-                <div>
-                    <p>{this.props.course.coursePace}</p>
-                    <p>{this.props.course.coursePoints}</p>
-                    <p>{this.props.course.coursePeriod}</p>
-                    <p>{this.props.course.courseLevel}</p>
-                    <p>{this.props.course.courseInfo}</p>
-                    <ul>
-                        {this.renderComments()}
-                    </ul>
+                <div className="containerComment">
+                    <header>
+                        <h1 id="course-title-comment">{this.props.course.courseName}</h1>
+                    </header>
+                    <div>
+                        <p>{this.props.course.coursePace}</p>
+                        <p>{this.props.course.coursePoints}</p>
+                        <p>{this.props.course.coursePeriod}</p>
+                        <p>{this.props.course.courseLevel}</p>
+                        <p>{this.props.course.courseInfo}</p>
+                        <ul>
+                            {this.renderComments()}
+                        </ul>
+                    </div>
+                    <div>
+                        <form className="add-comment" onSubmit={this.handleSubmit.bind(this)}>
+                            <input
+                                type="text"
+                                name="comment"
+                                placeholder="Lägg till kommentar..."
+                                onChange={this.onChange.bind(this)}
+                            />
+                        </form>
+                        <Link to="/"><h1>Tillbaka</h1></Link>
+
+                    </div>
                 </div>
-                <div>
-                    <form className="add-comment" onSubmit={this.handleSubmit.bind(this)}>
-                        <input
-                            type="text"
-                            name="comment"
-                            placeholder="Lägg till kommentar..."
-                            onChange={this.onChange.bind(this)}
-                        />
-                        <button>Skicka</button>
-                    </form>
-                    <Link to="/"><h1>Tillbaka</h1></Link>
-                </div>
+                <Link to="/" id="add-button-comment" ><h1>Tillbaka</h1></Link>
             </div>
         );
     }
