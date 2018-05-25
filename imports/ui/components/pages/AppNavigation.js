@@ -17,9 +17,7 @@ export class AppNavigation extends Component {
 
     let coursesToRender = courses.map(course => {
       return (
-       
-          <CourseBlock key={course._id} course={course} />
-
+        <CourseBlock key={course._id} course={course} />
       )
     })
 

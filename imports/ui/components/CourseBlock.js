@@ -35,7 +35,7 @@ export default class CourseBlock extends Component{
             }
           };
           const { containerStyle } = styles;
-        console.log(this.state.backgroundColor);   
+ 
         return(
             <div>
                 <Link to={"/" + this.props.course._id}>
