@@ -126,7 +126,7 @@ body {
 
 #course-p{
   font-family: 'Roboto';
-  font-size: 11px;
+  font-size: 15px;
   color: white;
   letter-spacing: 1px;
   text-decoration: none;
@@ -135,7 +135,8 @@ body {
 #form-comment{
   border-radius: 15px;
   margin: 0;
-  width: 94.5%;
+  width: 95.5%;
+  border: none;
 }
 
 #add-button-comment{
@@ -173,7 +174,7 @@ hr{
   border-width: 0.5px;
   color: white;
   margin:0px;
-  opacity: 0.3;;
+  opacity: 0.3;
 }
 
 #add-button-h1{
@@ -229,12 +230,11 @@ header .hide-completed {
 }
 
 input{
-    width: 30%;
+    width: 50%;
     padding: 12px 12px;
     margin: 8px 0;
     border: 1px solid #ccc;
-    border-radius: 4px;
-    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
 }
 
 form{
@@ -255,6 +255,16 @@ ul{
 
 li{
     border-bottom: none;
+}
+
+.container-add-course{
+
+  width: 85%;
+  height: 100%;
+  margin: 10px auto;
+  position: relative;
+  background: #f3e7dbba;
+  border-radius: 20px;
 }
 
 @media only screen 
@@ -278,10 +288,24 @@ and (max-width : 700px) and (min-width: 300px) {
         padding-bottom: 5px;
     }
     #form-comment{
-      width: 93%;
+      width: 94%;
     }
     .containerComment{
       width: 98%;
       margin: 5px, auto; 
+    }
+    input{
+      width: 80%;
+    }
+    .container-add-course{
+      width: 98%;
+      margin: 5px, auto; 
+    }
+    .courseBlock{
+      width: 175px;
+      height: 250px;
+    }
+    #course-p {
+      margin-bottom: 0%;
     }
 }
