@@ -68,9 +68,9 @@ body {
 
 .containerComment{
 
-  width: 60%;
+  width: 85%;
   height: 100%;
-  margin: 25px auto;
+  margin: 10px auto;
   position: relative;
   background: #d2324b;
   border-radius: 20px;
@@ -133,9 +133,10 @@ body {
   width: 110px;
   text-align: center;
   margin: 15px 10px 20px 5px;
-  padding: 5px 3px 5px 3px;
-  font-color: black;
+  padding: 10px 10px 10px 10px;
+  color: black;
   letter-spacing: 0.5px;
+  margin-left: 40%
 }
 
 
@@ -161,6 +162,7 @@ hr{
   border-width: 0.5px;
   color: white;
   margin:0px;
+  opacity: 0.3;;
 }
 
 #add-button-h1{
@@ -243,7 +245,8 @@ li{
     border-bottom: none;
 }
 
-@media (max-width: 600px) {
+@media only screen 
+and (max-width : 700px) and (min-width: 300px) {
 
     .container {
         width: 100%;
@@ -261,5 +264,12 @@ li{
  
     .new-task input {
         padding-bottom: 5px;
+    }
+    #form-comment{
+      width: 93%;
+    }
+    .containerComment{
+      width: 98%;
+      margin: 5px, auto; 
     }
 }

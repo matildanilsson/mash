@@ -73,11 +73,12 @@ export class Course extends Component {
                             ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. 
                             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p>
                             </div>
+                            <hr></hr>
                     </header>
-                    <h1 id="course-title-comment"> Recensioner </h1>
+                    <h1 id="course-title-comment"> </h1>
                     <div>
                         {this.props.id}
-                        <ul id="course-p">
+                        <ul id="course-p"> 
                             {this.renderComments()}
                         </ul>
                     </div>
