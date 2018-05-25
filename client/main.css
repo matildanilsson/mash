@@ -126,11 +126,15 @@ body {
 
 #course-p{
   font-family: 'Roboto';
-<<<<<<< HEAD
-  font-size: 11px;
-=======
-  font-size: 15px;
->>>>>>> 853921977e2f0bcf9a743dab609cb0ed43c89575
+  font-size: 12px;
+  color: white;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+#comment-ul-p{
+  font-family: 'Roboto';
+  font-size: 12px;
   color: white;
   letter-spacing: 1px;
   text-decoration: none;

@@ -46,16 +46,19 @@ export class Course extends Component {
                     <header>
                         <h1 id="course-title-comment">{this.props.course.courseName}</h1>
                     </header>
-                    <div>
-                        <p>{this.props.course.coursePace}</p>
-                        <p>{this.props.course.coursePoints}</p>
-                        <p>{this.props.course.coursePeriod}</p>
-                        <p>{this.props.course.courseLevel}</p>
-                        <p>{this.props.course.courseInfo}</p>
-                        <ul>
+                    <div id="flex-box-p">
+                        <p id="course-p">{this.props.course.coursePace}</p>
+                        <p id="course-p">{this.props.course.coursePoints}</p>
+                        <p id="course-p">{this.props.course.coursePeriod}</p>
+                        <p id="course-p">{this.props.course.courseLevel}</p>
+                        <p id="course-p">{this.props.course.courseInfo}</p>
+                    <div className="containerComment">
+                        <ul id="comment-ul-p">
                             {this.renderComments()}
                         </ul>
-                    </div>
+                    </div>   
+                    </div>        
+ 
                     <div>
                         <form className="add-comment" onSubmit={this.handleSubmit.bind(this)}>
                             <input
@@ -65,8 +68,6 @@ export class Course extends Component {
                                 onChange={this.onChange.bind(this)}
                             />
                         </form>
-                        <Link to="/"><h1>Tillbaka</h1></Link>
-
                     </div>
                 </div>
                 <Link to="/" id="add-button-comment" ><h1>Tillbaka</h1></Link>
