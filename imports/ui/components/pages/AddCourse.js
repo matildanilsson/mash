@@ -43,8 +43,9 @@ export class AddCourse extends Component{
     render(){
         return(
 		    <div className="container">
-		    
-		        <h1 id="add-button">Lägg till en kurs</h1>
+                <header id="addCourseTitle">
+                    <h1 id="addCourseTitleh1">Lägg till en kurs</h1>
+                </header>
 
 		        <form className="add-course" onSubmit={this.handleSubmit}>
 		        	<input
@@ -92,7 +93,7 @@ export class AddCourse extends Component{
                     <input
 		        		type="text"
 		        		name="courseInstitute"
-                        placeholder="Institution" 
+                        placeholder="Institution(tfe, mms, uid, cs)" 
                         onChange={this.onChange}
 		        	/>
                     <br></br>

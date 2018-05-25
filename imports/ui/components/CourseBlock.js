@@ -52,7 +52,7 @@ export default class CourseBlock extends Component{
                             <p id="course-p">Nivå: {this.props.course.courseLevel}</p>
                         </div>
                     </div>
-                </Link> 
+                </Link>  
             </div>
 
         );  
