@@ -121,7 +121,7 @@ body {
 
 #courseTitle{
   font-family: 'Roboto', sans-serif;
-  font-size: 40px;
+  font-size: 35px;
   letter-spacing: 1px;
   color: white;
   margin: 15px;
@@ -137,17 +137,17 @@ body {
 #course-p-card{
 
   font-family: 'Roboto';
-  font-size: 25px;
+  font-size: 35px;
   color: white;
   letter-spacing: 1px;
   text-decoration: none;
-  padding: 55px;
+  padding: 45px;
 
 }
 
 #comment-ul-p{
   font-family: 'Roboto';
-  font-size: 25px;
+  font-size: 29px;
   color: white;
   letter-spacing: 1px;
   text-decoration: none;
@@ -239,7 +239,7 @@ h1 {
 
 #course-title-comment{
   font-family: 'Roboto', sans-serif;
-  font-size: 40px;
+  font-size: 50px;
   letter-spacing: 1px;
   color: white;
   width: 100%;
