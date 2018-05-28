@@ -45,14 +45,19 @@ export class Course extends Component {
                 <div className="containerComment">
                     <header>
                         <h1 id="course-title-comment">{this.props.course.courseName}</h1>
-                    </header>
+                    </header> <hr></hr>
                     <div id="flex-box-p">
-                        <p id="course-p">{this.props.course.coursePace}</p>
-                        <p id="course-p">{this.props.course.coursePoints}</p>
-                        <p id="course-p">{this.props.course.coursePeriod}</p>
-                        <p id="course-p">{this.props.course.courseLevel}</p>
+                    <div id = "inline-p"> 
+                        <p id="course-p-card">{this.props.course.coursePace}</p>
+                        <p id="course-p-card">{this.props.course.coursePoints}</p>
+                        <p id="course-p-card">{this.props.course.coursePeriod}</p>
+                        <p id="course-p-card">{this.props.course.courseLevel}</p>
+                        </div>
+                        <h1 id = "course-title-comment">Om kursen</h1>
                         <p id="course-p">{this.props.course.courseInfo}</p>
                     <div className="containerComment">
+                    <h1 id="course-title-comment"> Recensioner </h1>
+                    <hr></hr>
                         <ul id="comment-ul-p">
                             {this.renderComments()}
                         </ul>

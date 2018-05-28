@@ -48,59 +48,59 @@ export class AddCourse extends Component{
                     <h1 id="addCourseTitleh1">Lägg till en kurs</h1>
                 </header>
 		        <form className="add-course" onSubmit={this.handleSubmit}>
-		        	<input
+		        	<input id = "add-course-input"
 		        		type="text"
 		        		name="courseName"
                         placeholder="Kursnamn"
                         onChange={this.onChange}
 		        	/>
                     <br></br>
-		        	<input
+		        	<input id = "add-course-input"
 		        		type="text"
 		        		name="coursePace"
                         placeholder="Studietakt" 
                         onChange={this.onChange}
 		        	/>
                     <br></br>
-		        	<input
+		        	<input id = "add-course-input"
 		        		type="text"
 		        		name="coursePoints"
                         placeholder="Högskolepoäng"
                         onChange={this.onChange} 
 		        	/>
                     <br></br>
-		        	<input
+		        	<input id = "add-course-input"
 		        		type="text"
 		        		name="coursePeriod"
                         placeholder="Kursperiod" 
                         onChange={this.onChange}
 		        	/>
                     <br></br>
-                    <input
+                    <input id = "add-course-input"
 		        		type="text"
 		        		name="courseLevel"
                         placeholder="Nivå" 
                         onChange={this.onChange}
 		        	/>
                     <br></br>
-                    <input
+                    <input id = "add-course-input-info"
 		        		type="text"
 		        		name="courseInfo"
                         placeholder="Kursinformation" 
                         onChange={this.onChange}
 		        	/>
                     <br></br>
-                    <input
+                    <input id = "add-course-input"
 		        		type="text"
 		        		name="courseInstitute"
                         placeholder="Institution (tfe, mms, uid, cs)" 
                         onChange={this.onChange}
 		        	/>
                     <br></br>
-                    <button id="add-button">Skicka</button>
+                    <button id="add-button-send">Skicka</button>
 		        </form>
                 </div>
-                <Link to="/"><h1 id="add-button">Tillbaka</h1></Link>
+                <Link to="/"><h1 id="add-button-back">Tillbaka</h1></Link>
 		    </div>
     	);
     }

@@ -1,10 +1,10 @@
 /* CSS declarations go here */
 
 .courseBlock{
-    width: 200px;
-    height: 300px;
+    width: 450px;
+    height: 630px;
     border-radius: 20px;
-    margin: 5px;
+    margin: 20px;
 }
 
 #login-buttons a, .accounts-dialog a {
@@ -12,6 +12,7 @@
     text-decoration: none;
     letter-spacing: 0.7px;
     font-family: 'Roboto';
+    font-size: 24px;
 }
 
 #navbar{
@@ -25,7 +26,7 @@
 
 #mashHeader{
     height: 110px;
-    width: 1000 px;
+    width: 100%;
     background-color: #DEC7B0;
     margin: 0;
     position: relative;
@@ -70,9 +71,9 @@ body {
 }
 
 .container {
-  width: 60%;
+  width: 100%;
   height: 100%;
-  margin: 0 auto;
+  margin: 25px auto;
   position: relative;
   background: #E7D7C7;
 }
@@ -104,8 +105,9 @@ body {
 #flex-box-p{
   display: flex;
   height: 70%;
-  padding: 1px 0px 0px 20px;
+  padding: 0px 0px 0px 0px;
   flex-direction: column;
+  margin: 50px;
 }
  
 #login-buttons {
@@ -119,25 +121,37 @@ body {
 
 #courseTitle{
   font-family: 'Roboto', sans-serif;
-  font-size: 13px;
+  font-size: 40px;
   letter-spacing: 1px;
   color: white;
+  margin: 15px;
 } 
 
 #course-p{
   font-family: 'Roboto';
-  font-size: 12px;
+  font-size: 30px;
   color: white;
   letter-spacing: 1px;
   text-decoration: none;
 }
+#course-p-card{
 
-#comment-ul-p{
   font-family: 'Roboto';
-  font-size: 12px;
+  font-size: 25px;
   color: white;
   letter-spacing: 1px;
   text-decoration: none;
+  padding: 55px;
+
+}
+
+#comment-ul-p{
+  font-family: 'Roboto';
+  font-size: 25px;
+  color: white;
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin-top: 7%
 }
 
 #form-comment{
@@ -156,19 +170,42 @@ body {
   padding: 10px 10px 10px 10px;
   color: black;
   letter-spacing: 0.5px;
-  margin-left: 40%
+  margin-left: 40%;
+  padding-top: 3%;
 }
 
 
 #add-button{
   background-color: white;
   border-radius: 10px;
-  width: 110px;
+  width: 270px;
   text-align: center;
-  margin: 15px 10px 20px 5px;
+  margin: 15px 10px 20px 35%;
   padding: 5px 3px 5px 3px;
   font-color: black;
   letter-spacing: 0.5px;
+}
+#add-button-send{
+  background-color: white;
+  border-radius: 10px;
+  width: 270px;
+  text-align: center;
+  margin: 15px 10px 20px 0%;
+  padding: 5px 3px 5px 3px;
+  font-color: black;
+  letter-spacing: 0.5px;
+  font-size: 35px;
+}
+#add-button-back{
+  background-color: white;
+  border-radius: 10px;
+  width: 270px;
+  text-align: center;
+  margin: 1000px 10px 20px 5%;
+  padding: 5px 3px 5px 3px;
+  font-color: black;
+  letter-spacing: 0.5px;
+  font-size: 35px;
 }
 
 a:-webkit-any-link {
@@ -179,10 +216,10 @@ a:-webkit-any-link {
 
 hr{
   border-style: solid;
-  border-width: 0.5px;
+  border-width: 0.9px;
   color: white;
-  margin:0px;
-  opacity: 0.3;
+  margin:65px;
+  opacity: 0.5;
 }
 
 #add-button-h1{
@@ -191,7 +228,7 @@ hr{
 }
 
 h1 {
-  font-size: 15px;
+  font-size: 40px;
   margin: center;
   margin-bottom: 10px;
   display: inline-block;
@@ -202,7 +239,7 @@ h1 {
 
 #course-title-comment{
   font-family: 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 40px;
   letter-spacing: 1px;
   color: white;
   width: 100%;
@@ -237,14 +274,6 @@ header .hide-completed {
   float: right;
 }
 
-input{
-    width: 50%;
-    padding: 12px 12px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-}
-
 form{
     text-align: center;
 }
@@ -273,6 +302,41 @@ li{
   position: relative;
   background: #f3e7dbba;
   border-radius: 20px;
+}
+#inline-p{
+  display: inline-flex;
+  text-align: center;
+}
+input[type=text]{
+  width: 100%;
+  padding: 12px 12px;
+  margin: 0px 0;
+  border: 0px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  height: 60px;
+  font-size: 20px;
+}
+#add-course-input{
+  width: 100%;
+  padding: 12px 12px;
+  margin: 20px 0;
+  border: 0px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  height: 60px;
+  font-size: 25px;
+}
+
+#add-course-input-info{
+  width: 100%;
+  padding: 12px 12px;
+  margin: 20px 0;
+  border: 0px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  height: 60px;
+  font-size: 25px;
 }
 
 @media only screen 
@@ -310,10 +374,14 @@ and (max-width : 700px) and (min-width: 300px) {
       margin: 5px, auto; 
     }
     .courseBlock{
-      width: 175px;
-      height: 250px;
+      width: 480px;
+      height: 450px;
     }
     #course-p {
       margin-bottom: 0%;
+    }
+    #course-p-card{
+      margin-bottom: 0%;
+      padding: 16px;
     }
 }
